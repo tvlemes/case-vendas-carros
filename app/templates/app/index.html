@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{%load plotly_dash%}
+{% load static %}
+
+{% block title_page %}Dashboard{% endblock title_page %}
+
+{% block content %}
+<div class="container-fluid" style="background-color: rgb(245, 239, 239);">
+    <div class="row">
+
+        <div class="col">
+            {% plotly_app name='vendas_ano' ratio=0.4 %}
+        </div>
+        
+        <div class="col">
+            {% plotly_app name='vendas_veiculo' ratio=0.4 %}
+        </div>
+        
+    </div>
+
+    <div class="row">
+
+        <div class="col">
+            {% plotly_app name='vendas_vendedor' ratio=0.8 %}
+        </div>
+
+        <div class="col">
+            {% plotly_app name='comissao_vendedor' ratio=0.8 %}
+        </div>
+
+        <div class="col">
+            {% plotly_app name='faturamento_vendedor' ratio=0.8 %}
+        </div>
+
+    </div>
+</div>
+{% endblock content %}
+
+
