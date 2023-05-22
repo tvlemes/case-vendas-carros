@@ -1,7 +1,6 @@
 # Django com a biblioteca Dash
 
 
-[![NPM](https://img.shields.io/github/license/tvlemes/django-lib-dash?style=flat-square)](https://github.com/tvlemes/django-lib-dash/blob/main/LICENSE)
 
 Dashboard da Análise de Vendas de Carros nos meses de Outubro, Novembro e Dezembro de 2016, utilizando a biblioteca dash.
 
